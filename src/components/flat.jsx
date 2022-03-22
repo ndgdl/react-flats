@@ -10,13 +10,16 @@ class Flat extends Component {
     return (
       <div className="card" style={style}>
 
-        <div className="card-category">
-          {this.props.price}
-        </div>
+      <div className="card-category">
+        {this.props.price}
+      </div>
 
-        <div className="card-description">
-          <h2>{this.props.description}</h2>
-        </div>
+      <div className="card-description">
+        <h2>{this.props.description}</h2>
+      </div>
+
+      <div className="card-link">
+      </div>
 
       </div>
     );
