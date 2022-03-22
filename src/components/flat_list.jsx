@@ -9,6 +9,7 @@ const FlatList = () => {
       {flats.map((flat) => {
         return (
           <Flat
+            key={flat.imageUrl}
             description={flat.name}
             imgUrl={flat.imageUrl}
             price={`${flat.price} ${flat.priceCurrency}`}
