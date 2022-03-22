@@ -18,6 +18,6 @@ const FlatList = () => {
       })}
     </div>
   );
-}
+};
 
 export default FlatList;
