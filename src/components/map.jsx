@@ -3,6 +3,11 @@ import GoogleMapReact from 'google-map-react';
 import Marker from './marker';
 
 class Map extends Component {
+  shouldComponentUpdate(nextProps) {
+    const { lat, lng } = this.props;
+    return (nextProps.lat !== lat) || (nextProps.lng !== lng);
+  }
+
   renderMarker() {
     const { lat, lng } = this.props;
 
