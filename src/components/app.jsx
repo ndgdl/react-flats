@@ -13,10 +13,10 @@ class App extends Component {
     };
   }
 
-  selectFlat = (lat, lng) => {
+  selectFlat = (latitude, longitude) => {
     this.setState({
-      lat: lat,
-      lng: lng
+      lat: latitude,
+      lng: longitude
     });
   }
 
