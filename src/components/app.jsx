@@ -8,8 +8,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      lat: 48.864716,
-      lng: 2.349014
+      lat: null,
+      lng: null
     };
   }
 

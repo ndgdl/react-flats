@@ -3,6 +3,14 @@ import GoogleMapReact from 'google-map-react';
 import Marker from './marker';
 
 class Map extends Component {
+  renderMarker() {
+    const { lat, lng } = this.props;
+
+    if (lat && lng) {
+      return <Marker lat={lat} lng={lng} />;
+    }
+    return '';
+  }
 
   render() {
     console.log("MAP RENDER");
@@ -15,8 +23,6 @@ class Map extends Component {
       zoom: 11
     };
 
-    const { lat, lng } = this.props;
-
     return (
       // Important! Always set the container height explicitly
       <div className="map-container">
@@ -25,10 +31,7 @@ class Map extends Component {
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
         >
-          <Marker
-            lat={lat}
-            lng={lng}
-          />
+          {this.renderMarker()}
         </GoogleMapReact>
       </div>
     );

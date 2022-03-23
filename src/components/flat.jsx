@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class Flat extends Component {
+  shouldComponentUpdate(nextProps) {
+    const { active } = this.props;
+    return nextProps.active !== active;
+  }
+
   handleClick = () => {
     const { lat, lng, imgUrl } = this.props;
     const { selectFunction, setActiveFunction } = this.props;
