@@ -20,8 +20,6 @@ class FlatList extends Component {
   }
 
   render() {
-    console.log('RENDER FLAT LIST');
-
     const { selectFunction } = this.props;
 
     return (

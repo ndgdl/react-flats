@@ -7,7 +7,6 @@ class Marker extends Component {
   }
 
   render() {
-    console.log('MARKER RENDER');
     return (
       <div className="marker" />
     );

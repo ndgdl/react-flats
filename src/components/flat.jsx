@@ -15,7 +15,6 @@ class Flat extends Component {
   }
 
   render() {
-    console.log('RENDER FLAT');
     const { imgUrl, price, description } = this.props;
     const { active } = this.props;
     const style = {

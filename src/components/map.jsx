@@ -18,8 +18,6 @@ class Map extends Component {
   }
 
   render() {
-    console.log("MAP RENDER");
-
     const defaultProps = {
       center: {
         lat: 48.864716,
